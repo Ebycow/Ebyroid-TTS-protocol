@@ -19,7 +19,7 @@ For this reason, it is ideal for developing experimental applications centering 
 |  id   |  type  | required | desc             | example                      |
 | :---: | :----: | :------: | :--------------- | :--------------------------- |
 | text  | string | **yes**  | TTS content      | `text=今日は%20はじめまして` |
-| name  | string |    no    | Voiceroid to use | `name=kiritan-chan`          |
+| name  | string |    no    | Voice Address | `name=kiritan-chan`          |
 
 #### response types
 
@@ -39,7 +39,7 @@ Note that these headers will be sent only with `200 OK`.
 #### response body
 
 A byte stream of the [Linear PCM](http://soundfile.sapp.org/doc/WaveFormat/) data.\
-The stream doesn't contain file header bytes since this endpoint is rather for those who want to deal with raw audio data.\
+**The stream doesn't contain file header bytes since this endpoint is rather for those who want to deal with raw audio data.**\
 Use `GET /api/v1/audiofile` instead if you demand `.wav` file.
 
 ### `GET /api/v1/audiofile`
@@ -49,7 +49,7 @@ Use `GET /api/v1/audiofile` instead if you demand `.wav` file.
 |  id   |  type  | required | desc             | example                    |
 | :---: | :----: | :------: | :--------------- | :------------------------- |
 | text  | string | **yes**  | TTS content      | `text=今晩は%20さようなら` |
-| name  | string |    no    | Voiceroid to use | `name=akane-chan`          |
+| name  | string |    no    | Voice Address | `name=akane-chan`          |
 
 #### response types
 
@@ -62,8 +62,7 @@ None.
 
 #### response body
 
-Complete data for a `.wav` file.\
-Any modern browser should support either to play or to download it.
+Complete data for a `.wav` file.
 
 ## License
 MIT. See LICENSE.
