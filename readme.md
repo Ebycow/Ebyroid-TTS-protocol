@@ -1,5 +1,5 @@
-# Ebyroid-standard-protocol
-**Ebyroid-standard-protocol ( Ebyroid-protocol ) is standardizes-simples HTTP-API for generic applications use of TTS.**  
+# Ebyroid-TTS-protocol
+**Ebyroid-TTS-protocol ( Ebyroid-protocol ) is standardizes-simples HTTP-API for generic applications use of TTS.**  
 ## About
 
 By solving and absorption specific platform-related issues, enables connectivity with a heterogeneous servers in developing applications use of TTS, and enables scaling of servers that provide TTS functionality. 
